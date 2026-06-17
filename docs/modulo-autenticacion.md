@@ -73,3 +73,30 @@
   -consultar usuarios mediante el modelo
   -crear sesiones
   -gestionar cierre de sesión
+
+## CIERRE DE SESIÓN
+ Responsabilidad:
+  Finalizar la sesión activa del usuario.
+ proceso:
+  1.Iniciar sesión actual
+  2.Eliminar variables de sesión
+  3.Destruir la sesión
+  4.Redirigir al login.
+
+  Archivos:
+  -public/logout.php
+
+---
+## ESTADO ACTUAL
+ COMPELTADO:
+  -Login de usuarios
+  -Validación de credenciales
+  -Contraseñas cifradas
+  -Gestión de sesiones
+  -Protección de rutas
+  -Dashboard inicial.
+   ### ARCHIVOS 
+    -app/controllers/AuthController.php
+    -app/models/Usuario.php
+    -app/views/Auth/login.php
+    -docs/modulo-autentixacion.php

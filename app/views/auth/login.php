@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Sistema de Inventario</h1>
-    <form method="POSTa">
+    <form method="POST" action="">
         <div>
             <label for="">Correo</label>
             <input type="email" name="correo" require>

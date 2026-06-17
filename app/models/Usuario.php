@@ -9,7 +9,7 @@ class Usuario{
 
     public function buscarPorCorreo(string $correo)
     {
-        $sql = "SELECT * FROM usuarios WHERE correo = :correo";
+        $sql = "SELECT * FROM usuario WHERE correo = :correo";
         $stmt = $this->conexion->prepare($sql);
         $stmt->bindParam(':correo',$correo);
         $stmt->execute();
