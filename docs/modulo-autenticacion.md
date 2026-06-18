@@ -1,47 +1,47 @@
 ## MÓDULO DE AUTENTICACION
-### Objetivo del módulo
+## Objetivo del módulo
  Permitir el acceso seguro de los usuarios al sistema de inventario mediante 
  la validación de credenciales almacenadas en la base de datos.
 
-### Pantalla de login
+## Pantalla de login
  La pantalla de inicio de sesión permitirá a los usuarios ingresar sus 
  credenciales para acceder al sistema .
 ---
-  ### campos:
+  ## campos:
   -correo electrónico
   -contraseña
   -botón ingresar
  
-  ### validaciones
+  ## validaciones
    -los campos son obligatorios
    -el correo debe existir en el sistema
    -la contraseña debe coincidir con la registrada
 ---
-### validación de credenciales
+## validación de credenciales
  El sistema verificará la información ingresada por el usuario
  consultando la tabla USUARIOS de la base de datos.
  
- ### Flujo
+ ## Flujo
   -el usuario ingresa correo y contreseña
   -el sistema busca el usuario en la base de datos.
   -se verifica la contraseña
   -se las credenciales son correctas,se inicia la sesión
   -si son incorrectas se muestra un mensaje
 
- ### inicio de sesión
+ ## inicio de sesión
  cuando las credenciales sean válidas:
   -se crea una sesión de usuario
   -se almacena la información necesaria en variables de sesion
   -el usuario es redirigido al panel principal del sistema
 
- ### cierre de sesión
+ ## cierre de sesión
  El sistema permitira finaliza la sesión activa
-  ### proceso
+  ## proceso
    -El usuario selecciona la opción "cerrar sesión"
    -el sistema destruye la sesión actual
    -el usuario es redirigido a la pantalla de inicio de sesión
 
-  ### consideraciones de seguridad
+  ## consideraciones de seguridad
     -las contraseñas se almacenarán cifradas mediante "password_hash()"
     -La validación se realizará utilizando "password_verify()"
     -las paginas protegidas requerirán una sesión activa para ser visualizadaz.
@@ -95,7 +95,8 @@
   -Gestión de sesiones
   -Protección de rutas
   -Dashboard inicial.
-   ### ARCHIVOS 
+   ## ARCHIVOS 
+  
     -app/controllers/AuthController.php
     -app/models/Usuario.php
     -app/views/Auth/login.php
