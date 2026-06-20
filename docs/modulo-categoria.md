@@ -35,12 +35,50 @@
    Retorno:
     array asociativo con las categorías encontradas.
 
+  ### crear()
+  Responsabilidad:
+   Registrar una nueva categoría en la base de datos.
+  Parámetros:
+   - nombre
+   - descripcion
+   
+  Retorno:
+   - true si la inserción fue exitosa.
+   - false en caso de error.
 
+  ### buscarPorId()
+  Responsabilidad:
+   Buscar una categoria por su identificador.
+  parámetros:
+   id
+  Retorno:
+   -Datos de la categoría encontrada.
+   -false si no existe.
+
+  ### actualizar()
+  Responsabildad:
+   Modificar una categoría existente.
+  parámetros:
+   -id
+   -nombre
+   -descripcion
+  Retorno:
+   -true si la actualización fue exitosa.
+   -False en casa de error.
+
+  ### Eliminar()
+  Responsabilidad
+    Eliminar una categoria por su id.
+  Parámentros:
+    -id
+  Retorno:
+   -true si se aliminó correctamente.
+   -false si ocurrió un error.
 
 
 ## ARCHIVO
   -app/controllers/categoriaController.php
   -app/models/categria.php
-  -app/views/
+  -app/views/categorias/index.php
 
 
