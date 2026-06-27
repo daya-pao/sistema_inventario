@@ -80,5 +80,7 @@
   -app/controllers/categoriaController.php
   -app/models/categria.php
   -app/views/categorias/index.php
+  -docs/modulo-categpria.md
+  -public/categorias.php
 
 
