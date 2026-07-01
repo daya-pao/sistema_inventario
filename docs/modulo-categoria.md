@@ -83,4 +83,3 @@
   -docs/modulo-categpria.md
   -public/categorias.php
 
-
